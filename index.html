@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ass 9</title>
+</head>
+<body>
+    <header>
+        <h3 class="fw-bolder text-black-50  my-5 mx-5 fs-2">Bookmarker</h3>
+    </header>
+    <div class="container my-3 p-5">
+        <div class="bookmark text-center">
+            <h4 class="text-black fw-bold">Bookmark your favorite sites </h4>
+            <label for="setName" class="fw-bolder my-4">Site Name</label>
+            <input type="text" class="input-group w-75 m-auto rounded-1 border-light" id="setName" placeholder="Bookmark Name">
+            <p id="nameRequired" class="d-none bg-danger-subtle w-75 m-auto my-2 text-danger-emphasis fw-bold py-1 rounded-1 border border-danger border-1">Name is required</p>
+            <label for="siteURL" class="fw-bolder my-4">Site URL</label>
+            <input type="text" class=" input-group w-75 m-auto rounded-1 border-light" id="siteURL" placeholder="website URL">
+            <p id="urlRequired" class="d-none bg-danger-subtle w-75 m-auto my-2 text-danger-emphasis fw-bold py-1 rounded-1 border border-danger border-1">URL is required</p>
+            <button id="addBtn" onclick="addBookmark('addBtn')" class="btn btn-primary mt-4">Submit</button>
+            <div id="updateBtn" class="d-none ">
+                <!-- <button onclick="addBookmark()" class="btn btn-warning mt-4">Update</button> -->
+            </div>
+            
+        </div>
+    </div>
+    <div id="bookmarkList" class="container ">
+        
+    </div>
+
+    <footer>
+        <p class="fw-bolder text-black-50  my-4 mx-5"><small>© 2019 Bookmarker Inc.</small></p>
+    </footer>
+
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
